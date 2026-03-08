@@ -11,7 +11,14 @@
 1. Navigate to System OAuth > Application Registry, and click "New"
 2. Select "Create an OAuth API endpoint for external clients"
 3. Enter a **Name**, and change **Default Grant type** to _Authorization Code_
+4. Make a note of the Client ID and Client Secret
 
 ## Bruno
 
+Pre-requiste: Bruno Workspace and Collection
+1. Create a new request
+ + efefe
+ + efefe
+2. efefe
+   
 
