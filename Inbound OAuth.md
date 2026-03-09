@@ -18,18 +18,28 @@
 Pre-requiste: Bruno Workspace and Collection
 1. Create a new request
    + Method: GET
-   + URL: {{base_url}}/api/now/table/sys_user?sys_id=javascript:gs.getUserID()
+   + URL: `{{base_url}}/api/now/table/sys_user?sys_id=javascript:gs.getUserID()`
      
  * **Auth tab**
    + Grant Type: Authorization Code
    + Callback URL: https://oauth.usebruno.com/callback
-   + Authorization URL: https://{{instance_name}}.service-now.com/oauth_auth.do
-   + Access Token URL: https://{{instance_name}}.service-now.com/oauth_token.do
-   + Client ID: {{client_id}}
-   + Client Secret: {{client_secret}}
+   + Authorization URL: `https://{{instance_name}}.service-now.com/oauth_auth.do`
+   + Access Token URL: `https://{{instance_name}}.service-now.com/oauth_token.do`
+   + Client ID: `{{client_id}}`
+   + Client Secret: `{{client_secret}}`
    + Scope: useraccount
    + State: 12345
-   + Refresh Token URL: https://{{instance_name}}.service-now.com/oauth_auth.do
+   + Refresh Token URL: `https://{{instance_name}}.service-now.com/oauth_auth.do`
+2. Create a new environment
+   + base_url
+   + instance_name
+   + client_id
+   + client_secret
 
- 
+3. Get Access Token
+   + Click "Get Access Token" (bottom of Auth tab)
+   + Log in to ServiceNow as your desired user
+   + (if this does not work, try setting "Use system browser for OAuth" to true)
+  
 
+  
