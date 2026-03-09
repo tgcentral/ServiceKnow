@@ -17,9 +17,10 @@
 
 Pre-requiste: Bruno Workspace and Collection
 1. Create a new request
- + Method: GET
- + URL: {{base_url}}/api/now/table/sys_user?sys_id=javascript:gs.getUserID()
-2. Auth tab
+   + Method: GET
+   + URL: {{base_url}}/api/now/table/sys_user?sys_id=javascript:gs.getUserID()
+     
+ * **Auth tab**
    + Grant Type: Authorization Code
    + Callback URL: https://oauth.usebruno.com/callback
    + Authorization URL: https://{{instance_name}}.service-now.com/oauth_auth.do
@@ -29,5 +30,6 @@ Pre-requiste: Bruno Workspace and Collection
    + Scope: useraccount
    + State: 12345
    + Refresh Token URL: https://{{instance_name}}.service-now.com/oauth_auth.do
-   
+
+ 
 
